@@ -10,7 +10,7 @@
 <meta name="keywords" content="impresión 3D Puebla, impresión 3D, modelado 3D, CAD, prototipado rápido, impresión en resina, filamento, manufactura a pedido, figuras 3D, TecnoPrint">
 <meta name="author" content="TecnoPrint">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-<meta name="theme-color" content="#070A10">
+<meta name="theme-color" content="#E8E9EB">
 <link rel="canonical" href="https://www.tecnoprint.store/">
 
 <!-- Geo -->
@@ -34,7 +34,7 @@
 <meta name="twitter:image" content="https://drive.google.com/thumbnail?id=1WFk7uTqOtUSmubsZQKCDUZBycwPzGQkv&sz=w1200">
 
 <!-- Favicon -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%23070A10'/%3E%3Ctext%20x='16'%20y='23'%20font-family='Arial,sans-serif'%20font-size='20'%20font-weight='bold'%20fill='%23FF5C1A'%20text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%230F2840'/%3E%3Ctext%20x='16'%20y='23'%20font-family='Arial,sans-serif'%20font-size='20'%20font-weight='bold'%20fill='%23F07C1E'%20text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
 
 <!-- Datos estructurados (Google) -->
 <script type="application/ld+json">
@@ -84,32 +84,34 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #070A10;
-    --orange: #FF5C1A;
-    --blue: #38BDF8;
-    --white: #F0F4FF;
-    --gray: #7A8899;
-    --gray-dim: #1E2A38;
+    /* Paleta de la tienda Shopify (toys.tecnoprint.store) */
+    --bg: #E8E9EB;
+    --surface: #FFFFFF;
+    --navy: #0F2840;
+    --orange: #F07C1E;
+    --orange-hover: #CD630E;
+    --gray: #4E6073;
+    --gray-dim: #8A97A4;
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body { background: var(--bg); color: var(--white); font-family: 'Space Grotesk', sans-serif; overflow-x: hidden; line-height: 1.6; }
+  body { background: var(--bg); color: var(--navy); font-family: 'Rubik', sans-serif; overflow-x: hidden; line-height: 1.6; }
 
   /* NAV */
-  nav { position:fixed; top:0; left:0; right:0; z-index:200; display:flex; align-items:center; justify-content:space-between; padding:0 48px; height:60px; background:rgba(7,10,16,0.75); backdrop-filter:blur(20px); border-bottom:1px solid rgba(255,92,26,0.1); }
-  .nav-logo { font-family:'Bebas Neue',sans-serif; font-size:1.3rem; letter-spacing:0.15em; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:200; display:flex; align-items:center; justify-content:space-between; padding:0 48px; height:60px; background:rgba(232,233,235,0.88); backdrop-filter:blur(20px); border-bottom:1px solid rgba(15,40,64,0.08); }
+  .nav-logo { font-family:'Anton',sans-serif; font-size:1.35rem; letter-spacing:0.06em; color:var(--navy); }
   .nav-logo span { color:var(--orange); }
   .nav-links { display:flex; gap:32px; list-style:none; }
-  .nav-links a { color:var(--gray); text-decoration:none; font-size:0.83rem; font-weight:500; letter-spacing:0.04em; transition:color 0.2s; }
+  .nav-links a { color:var(--navy); text-decoration:none; font-family:'Anton',sans-serif; font-size:1rem; letter-spacing:0.01em; transition:color 0.2s; }
   .nav-links a:hover { color:var(--orange); }
-  .nav-cta { background:var(--orange); color:#fff; border:none; padding:9px 22px; border-radius:5px; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:0.8rem; letter-spacing:0.06em; text-transform:uppercase; cursor:pointer; transition:all 0.2s; }
-  .nav-cta:hover { background:#ff7a40; transform:translateY(-1px); }
+  .nav-cta { background:var(--orange); color:var(--navy); border:none; padding:9px 22px; border-radius:999px; font-family:'Rubik',sans-serif; font-weight:500; font-size:0.88rem; cursor:pointer; transition:all 0.2s; }
+  .nav-cta:hover { background:var(--orange-hover); color:#fff; transform:translateY(-1px); }
   .nav-cta-mobile { display:none; }
   .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:4px; }
-  .hamburger span { width:22px; height:2px; background:var(--white); border-radius:2px; display:block; }
+  .hamburger span { width:22px; height:2px; background:var(--navy); border-radius:2px; display:block; }
 
   /* HERO STICKY */
   #hero-wrapper { position: relative; }
@@ -123,18 +125,8 @@
     position: relative;
   }
 
-  /* Aurora canvas — full hero background */
-  #aurora-canvas {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 0;
-  }
-
   /* Subtle grid */
-  #grid-canvas { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:1; opacity:0.12; }
+  #grid-canvas { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:1; opacity:0.7; }
 
   /* LOGO STAGE — logo oficial TecnoPrint (mismo de la tienda Shopify) */
   #logo-stage {
@@ -162,15 +154,15 @@
     text-align: center; z-index: 10;
     padding-bottom: 4vh;
     pointer-events: none;
-    background: linear-gradient(to top, rgba(7,10,16,0.96) 0%, rgba(7,10,16,0.72) 55%, transparent 100%);
+    background: linear-gradient(to top, rgba(232,233,235,0.96) 0%, rgba(232,233,235,0.7) 55%, transparent 100%);
     padding-top: 100px;
   }
   h1 {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Anton', sans-serif;
     font-size: clamp(5rem, 17vw, 12rem);
     letter-spacing: 0.08em;
     line-height: 0.88;
-    color: var(--white);
+    color: var(--navy);
   }
   #hero-sub {
     opacity: 0; transform: translateY(14px);
@@ -178,12 +170,12 @@
     pointer-events: none;
   }
   #hero-sub.visible { opacity:1; transform:none; pointer-events:auto; }
-  .hero-tagline { font-family:'Bebas Neue',sans-serif; font-size:clamp(1rem,2.2vw,1.5rem); letter-spacing:0.28em; color:var(--orange); margin-top:8px; margin-bottom:26px; }
+  .hero-tagline { font-family:'Anton',sans-serif; font-size:clamp(1rem,2.2vw,1.5rem); letter-spacing:0.12em; color:var(--navy); margin-top:8px; margin-bottom:26px; }
   .hero-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
-  .btn-primary { background:var(--orange); color:#fff; border:none; padding:14px 34px; border-radius:5px; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:0.88rem; letter-spacing:0.05em; text-transform:uppercase; cursor:pointer; transition:all 0.2s; }
-  .btn-primary:hover { background:#ff7a40; transform:translateY(-2px); box-shadow:0 8px 28px rgba(255,92,26,0.35); }
-  .btn-outline { background:transparent; color:var(--white); border:1.5px solid rgba(240,244,255,0.25); padding:14px 34px; border-radius:5px; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:0.88rem; cursor:pointer; transition:all 0.2s; }
-  .btn-outline:hover { border-color:var(--orange); color:var(--orange); }
+  .btn-primary { background:var(--orange); color:var(--navy); border:none; padding:14px 34px; border-radius:999px; font-family:'Rubik',sans-serif; font-weight:500; font-size:1rem; cursor:pointer; transition:all 0.2s; }
+  .btn-primary:hover { background:var(--orange-hover); color:#fff; transform:translateY(-2px); box-shadow:0 8px 24px rgba(240,124,30,0.3); }
+  .btn-outline { background:transparent; color:var(--navy); border:1.5px solid var(--navy); padding:14px 34px; border-radius:999px; font-family:'Rubik',sans-serif; font-weight:500; font-size:1rem; cursor:pointer; transition:all 0.2s; }
+  .btn-outline:hover { background:var(--navy); color:#fff; }
 
   /* Scroll hint */
   .scroll-hint { position:absolute; bottom:26px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:8px; z-index:20; transition:opacity 0.4s; }
@@ -192,69 +184,70 @@
   @keyframes bounce { 0%,100%{transform:rotate(45deg) translate(0,0)} 50%{transform:rotate(45deg) translate(4px,4px)} }
 
   /* Progress bar */
-  #asm-bar { position:absolute; bottom:0; left:0; right:0; height:2px; background:rgba(0,0,0,0.06); z-index:20; }
-  #asm-fill { height:100%; width:0%; background:linear-gradient(90deg,var(--orange),var(--blue)); transition: none; }
+  #asm-bar { position:absolute; bottom:0; left:0; right:0; height:3px; background:rgba(15,40,64,0.08); z-index:20; }
+  #asm-fill { height:100%; width:0%; background:linear-gradient(90deg,var(--orange),var(--navy)); transition: none; }
 
   /* ======== REST OF PAGE (dark) ======== */
-  .trust-bar { background:var(--bg); border-top:1px solid rgba(255,92,26,0.14); border-bottom:1px solid rgba(255,92,26,0.08); padding:24px 48px; display:flex; justify-content:center; gap:64px; flex-wrap:wrap; }
+  .trust-bar { background:var(--navy); padding:24px 48px; display:flex; justify-content:center; gap:64px; flex-wrap:wrap; }
   .trust-item { text-align:center; }
-  .trust-num { font-family:'Bebas Neue',sans-serif; font-size:2rem; color:var(--orange); line-height:1; letter-spacing:0.05em; }
-  .trust-label { font-size:0.72rem; color:var(--gray); letter-spacing:0.08em; text-transform:uppercase; margin-top:2px; }
+  .trust-num { font-family:'Anton',sans-serif; font-size:2rem; color:var(--orange); line-height:1.1; letter-spacing:0.02em; }
+  .trust-label { font-size:0.72rem; color:rgba(255,255,255,0.85); letter-spacing:0.08em; text-transform:uppercase; margin-top:2px; }
 
-  section { padding:100px 24px; background:var(--bg); }
+  section { padding:100px 24px; background:var(--surface); }
+  #portafolio, #cotizacion { background:var(--bg); }
   .container { max-width:1160px; margin:0 auto; }
   .section-label { display:inline-block; font-family:'JetBrains Mono',monospace; font-size:0.7rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--orange); margin-bottom:12px; }
-  h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(2.4rem,6vw,4rem); letter-spacing:0.05em; line-height:1; margin-bottom:16px; }
+  h2 { font-family:'Anton',sans-serif; font-size:clamp(2.4rem,6vw,4rem); letter-spacing:0.01em; line-height:1.05; margin-bottom:16px; color:var(--navy); }
   .section-desc { color:var(--gray); font-size:1rem; max-width:520px; line-height:1.7; }
   .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.65s ease,transform 0.65s ease; }
   .reveal.visible { opacity:1; transform:none; }
 
   /* Services */
   .services-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:16px; margin-top:56px; }
-  .service-card { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:12px; padding:28px 24px; transition:all 0.25s; }
-  .service-card:hover { border-color:var(--orange); transform:translateY(-4px); background:rgba(255,92,26,0.04); }
-  .service-icon { width:44px; height:44px; border-radius:10px; background:rgba(255,92,26,0.1); display:flex; align-items:center; justify-content:center; margin-bottom:18px; }
+  .service-card { background:var(--surface); border:1px solid rgba(15,40,64,0.1); border-radius:12px; padding:28px 24px; transition:all 0.25s; }
+  .service-card:hover { border-color:var(--orange); transform:translateY(-4px); box-shadow:0 12px 28px rgba(15,40,64,0.08); }
+  .service-icon { width:44px; height:44px; border-radius:10px; background:rgba(240,124,30,0.12); display:flex; align-items:center; justify-content:center; margin-bottom:18px; }
   .service-icon svg { width:22px; height:22px; stroke:var(--orange); fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
   .service-card h3 { font-size:1rem; font-weight:700; margin-bottom:8px; }
   .service-card p { font-size:0.83rem; color:var(--gray); line-height:1.65; }
-  .service-tag { display:inline-block; margin-top:14px; font-size:0.7rem; color:var(--blue); background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.2); padding:3px 10px; border-radius:100px; font-family:'JetBrains Mono',monospace; }
+  .service-tag { display:inline-block; margin-top:14px; font-size:0.7rem; color:var(--navy); background:rgba(15,40,64,0.06); border:1px solid rgba(15,40,64,0.12); padding:3px 10px; border-radius:100px; font-family:'JetBrains Mono',monospace; }
 
   /* Portfolio */
   .portfolio-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:14px; margin-top:56px; }
-  .portfolio-card { border-radius:12px; overflow:hidden; position:relative; aspect-ratio:1; border:1px solid rgba(255,255,255,0.06); cursor:pointer; transition:transform 0.3s,box-shadow 0.3s; background:rgba(255,255,255,0.03); }
-  .portfolio-card:hover { transform:scale(1.02); box-shadow:0 16px 40px rgba(0,0,0,0.5); }
+  .portfolio-card { border-radius:12px; overflow:hidden; position:relative; aspect-ratio:1; border:1px solid rgba(15,40,64,0.1); cursor:pointer; transition:transform 0.3s,box-shadow 0.3s; background:var(--surface); }
+  .portfolio-card:hover { transform:scale(1.02); box-shadow:0 16px 40px rgba(15,40,64,0.18); }
   .portfolio-card img { width:100%; height:100%; object-fit:cover; transition:transform 0.4s; display:block; }
   .portfolio-card:hover img { transform:scale(1.07); }
-  .portfolio-overlay { position:absolute; inset:0; background:linear-gradient(to top,rgba(7,10,16,0.9) 0%,transparent 55%); display:flex; flex-direction:column; justify-content:flex-end; padding:20px; opacity:0; transition:opacity 0.3s; }
+  .portfolio-overlay { position:absolute; inset:0; background:linear-gradient(to top,rgba(15,40,64,0.9) 0%,transparent 55%); display:flex; flex-direction:column; justify-content:flex-end; padding:20px; opacity:0; transition:opacity 0.3s; }
   .portfolio-card:hover .portfolio-overlay { opacity:1; }
-  .portfolio-overlay h4 { font-size:0.92rem; font-weight:700; margin-bottom:4px; }
+  .portfolio-overlay h4 { font-size:0.92rem; font-weight:700; margin-bottom:4px; color:#fff; }
   .portfolio-overlay span { font-size:0.73rem; color:var(--orange); font-family:'JetBrains Mono',monospace; }
 
   /* Proceso */
   .proceso-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
   .proceso-list { display:flex; flex-direction:column; }
   .proceso-item { display:grid; grid-template-columns:46px 1fr; gap:0 18px; position:relative; }
-  .proceso-item:not(:last-child)::after { content:''; position:absolute; left:22px; top:42px; bottom:-1px; width:1px; background:linear-gradient(to bottom,rgba(255,92,26,0.3),rgba(255,92,26,0.06)); }
-  .proceso-num { width:34px; height:34px; border-radius:50%; border:1px solid rgba(255,92,26,0.32); display:flex; align-items:center; justify-content:center; font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--orange); background:rgba(255,92,26,0.06); z-index:1; flex-shrink:0; }
+  .proceso-item:not(:last-child)::after { content:''; position:absolute; left:22px; top:42px; bottom:-1px; width:1px; background:linear-gradient(to bottom,rgba(240,124,30,0.45),rgba(240,124,30,0.1)); }
+  .proceso-num { width:34px; height:34px; border-radius:50%; border:1px solid rgba(240,124,30,0.5); display:flex; align-items:center; justify-content:center; font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--orange); background:rgba(240,124,30,0.1); z-index:1; flex-shrink:0; }
   .proceso-content { padding:0 0 36px; }
   .proceso-content h3 { font-size:0.95rem; font-weight:700; margin-bottom:5px; padding-top:5px; }
   .proceso-content p { font-size:0.82rem; color:var(--gray); line-height:1.65; }
-  .proceso-time { display:inline-block; margin-top:8px; font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--blue); background:rgba(56,189,248,0.08); padding:3px 10px; border-radius:100px; }
+  .proceso-time { display:inline-block; margin-top:8px; font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--navy); background:rgba(15,40,64,0.06); padding:3px 10px; border-radius:100px; }
 
   /* CTA */
-  .cta-box { max-width:700px; margin:0 auto; text-align:center; background:rgba(255,92,26,0.04); border:1px solid rgba(255,92,26,0.2); border-radius:20px; padding:64px 48px; }
+  .cta-box { max-width:700px; margin:0 auto; text-align:center; background:var(--surface); border:1px solid rgba(15,40,64,0.1); box-shadow:0 12px 32px rgba(15,40,64,0.06); border-radius:20px; padding:64px 48px; }
   .cta-box h2 { font-size:clamp(2.5rem,7vw,5rem); margin-bottom:16px; }
   .cta-box > p { color:var(--gray); font-size:1rem; max-width:460px; margin:0 auto 36px; line-height:1.7; }
   .cta-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-bottom:24px; }
-  .btn-wa { display:inline-flex; align-items:center; gap:10px; background:rgba(37,211,102,0.1); color:#25D366; border:1.5px solid rgba(37,211,102,0.28); padding:14px 28px; border-radius:7px; font-weight:700; font-size:0.86rem; cursor:pointer; text-decoration:none; transition:all 0.2s; }
-  .btn-wa:hover { background:rgba(37,211,102,0.18); transform:translateY(-2px); }
+  .btn-wa { display:inline-flex; align-items:center; gap:10px; background:rgba(37,211,102,0.12); color:#128C4B; border:1.5px solid rgba(18,140,75,0.35); padding:14px 28px; border-radius:999px; font-weight:700; font-size:0.86rem; cursor:pointer; text-decoration:none; transition:all 0.2s; }
+  .btn-wa:hover { background:rgba(37,211,102,0.2); transform:translateY(-2px); }
   .cta-contact { font-size:0.8rem; color:var(--gray); }
-  .cta-contact a { color:var(--white); text-decoration:none; }
+  .cta-contact a { color:var(--navy); text-decoration:none; }
   .cta-contact a:hover { color:var(--orange); }
 
   /* Footer */
-  footer { background:var(--bg); border-top:1px solid rgba(255,255,255,0.05); padding:36px 48px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
-  .footer-logo { font-family:'Bebas Neue',sans-serif; font-size:1.4rem; letter-spacing:0.15em; }
+  footer { background:var(--navy); color:#fff; padding:36px 48px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
+  .footer-logo { font-family:'Anton',sans-serif; font-size:1.4rem; letter-spacing:0.06em; color:#fff; }
   .footer-logo span { color:var(--orange); }
 
   /* Responsive — tablet + mobile */
@@ -267,13 +260,13 @@
     nav.open .nav-links {
       display:flex; flex-direction:column;
       position:absolute; top:60px; left:0; right:0;
-      background:rgba(7,10,16,0.98);
-      border-bottom:1px solid rgba(255,92,26,0.2);
+      background:rgba(232,233,235,0.98);
+      border-bottom:1px solid rgba(15,40,64,0.12);
       padding:8px 0 0; gap:0; z-index:199;
     }
-    nav.open .nav-links li { border-bottom:1px solid rgba(255,255,255,0.06); }
+    nav.open .nav-links li { border-bottom:1px solid rgba(15,40,64,0.08); }
     nav.open .nav-links li:last-child { border-bottom:none; }
-    nav.open .nav-links a { display:block; padding:16px 24px; font-size:1rem; color:var(--white); }
+    nav.open .nav-links a { display:block; padding:16px 24px; font-size:1rem; color:var(--navy); }
     nav.open .nav-cta-mobile { display:block; padding:16px 24px 20px; }
     nav.open .nav-cta-mobile .nav-cta { display:block; width:100%; text-align:center; padding:14px; font-size:0.95rem; }
 
@@ -351,9 +344,6 @@
 <div id="hero-wrapper">
   <div id="hero-sticky">
 
-    <!-- Aurora WebGL background -->
-    <canvas id="aurora-canvas" aria-hidden="true"></canvas>
-
     <canvas id="grid-canvas" aria-hidden="true"></canvas>
 
     <!-- Logo oficial TecnoPrint (engrane gira con el scroll) -->
@@ -367,11 +357,11 @@
         </defs>
         <g id="tp-gear-scroll">
           <g id="tp-gear-idle">
-            <path d="M301.65,140.40 L301.65,189.60 L273.23,198.44 L263.27,222.48 L277.12,248.83 L242.33,283.62 L215.98,269.77 L191.94,279.73 L183.10,308.15 L133.90,308.15 L125.06,279.73 L101.02,269.77 L74.67,283.62 L39.88,248.83 L53.73,222.48 L43.77,198.44 L15.35,189.60 L15.35,140.40 L43.77,131.56 L53.73,107.52 L39.88,81.17 L74.67,46.38 L101.02,60.23 L125.06,50.27 L133.90,21.85 L183.10,21.85 L191.94,50.27 L215.98,60.23 L242.33,46.38 L277.12,81.17 L263.27,107.52 L273.23,131.56 Z" fill="url(#tpGear)" stroke="#F0F4FF" stroke-width="14.75" stroke-linejoin="round" />
-            <circle cx="158.50" cy="165.00" r="61.5" fill="#070A10" stroke="#F0F4FF" stroke-width="14.75" />
+            <path d="M301.65,140.40 L301.65,189.60 L273.23,198.44 L263.27,222.48 L277.12,248.83 L242.33,283.62 L215.98,269.77 L191.94,279.73 L183.10,308.15 L133.90,308.15 L125.06,279.73 L101.02,269.77 L74.67,283.62 L39.88,248.83 L53.73,222.48 L43.77,198.44 L15.35,189.60 L15.35,140.40 L43.77,131.56 L53.73,107.52 L39.88,81.17 L74.67,46.38 L101.02,60.23 L125.06,50.27 L133.90,21.85 L183.10,21.85 L191.94,50.27 L215.98,60.23 L242.33,46.38 L277.12,81.17 L263.27,107.52 L273.23,131.56 Z" fill="url(#tpGear)" stroke="#0F2840" stroke-width="14.75" stroke-linejoin="round" />
+            <circle cx="158.50" cy="165.00" r="61.5" fill="#ffffff" stroke="#0F2840" stroke-width="14.75" />
           </g>
         </g>
-        <g id="tp-word" fill="#F0F4FF">
+        <g id="tp-word" fill="#0F2840">
           <path transform="matrix(0.333333 0 0 -0.333333 324 330)" d="M765 843 c-118 -11 -194 -119 -165 -233 34 -136 202 -185 300 -87 23
 21 44 59 36 63 -1 1 -29 4 -46 5 -4 1 -11 2 -16 2 -12 2 -13 1 -19 -7 -25 -38
 -72 -51 -118 -33 -68 27 -86 131 -32 187 40 41 110 40 144 -3 3 -3 6 -8 8 -10
@@ -570,27 +560,27 @@
 <footer>
   <div>
     <div class="footer-logo">TECNO<span>PRINT</span></div>
-    <p style="font-style:italic;color:var(--gray);font-size:0.78rem;margin-top:4px">"Tu idea, hecha objeto." — Puebla, México</p>
+    <p style="font-style:italic;color:rgba(255,255,255,0.75);font-size:0.78rem;margin-top:4px">"Tu idea, hecha objeto." — Puebla, México</p>
   </div>
   <div style="text-align:right">
-    <p style="font-size:0.76rem;color:var(--gray)">@tecnoprint_3d · 221 571 4962</p>
-    <p style="font-size:0.7rem;color:var(--gray-dim);margin-top:4px">Estrategia digital por The M Touch © 2026</p>
+    <p style="font-size:0.76rem;color:rgba(255,255,255,0.75)">@tecnoprint_3d · 221 571 4962</p>
+    <p style="font-size:0.7rem;color:rgba(255,255,255,0.5);margin-top:4px">Estrategia digital por The M Touch © 2026</p>
   </div>
 </footer>
 
 <!-- Modal -->
-<div id="modal-backdrop" style="display:none;position:fixed;inset:0;background:rgba(7,10,16,0.92);backdrop-filter:blur(10px);z-index:300;align-items:center;justify-content:center;padding:24px">
-  <div style="background:#0d1420;border:1px solid rgba(255,92,26,0.3);border-radius:16px;padding:40px;width:100%;max-width:500px;max-height:90vh;overflow-y:auto;position:relative">
-    <button onclick="closeModal()" style="position:absolute;top:14px;right:14px;background:rgba(255,255,255,0.06);border:none;color:var(--gray);width:32px;height:32px;border-radius:6px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center">✕</button>
+<div id="modal-backdrop" style="display:none;position:fixed;inset:0;background:rgba(15,40,64,0.55);backdrop-filter:blur(8px);z-index:300;align-items:center;justify-content:center;padding:24px">
+  <div style="background:#ffffff;color:var(--navy);border:1px solid rgba(15,40,64,0.12);border-radius:16px;padding:40px;width:100%;max-width:500px;max-height:90vh;overflow-y:auto;position:relative">
+    <button onclick="closeModal()" style="position:absolute;top:14px;right:14px;background:rgba(15,40,64,0.06);border:none;color:var(--gray);width:32px;height:32px;border-radius:6px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center">✕</button>
     <div style="font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:var(--orange);letter-spacing:0.15em;margin-bottom:6px">// Cotización</div>
-    <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:0.08em;margin-bottom:20px">TU PROYECTO</h3>
+    <h3 style="font-family:'Anton',sans-serif;font-size:1.8rem;letter-spacing:0.08em;margin-bottom:20px">TU PROYECTO</h3>
     <div id="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
-      <div><label style="font-size:0.74rem;font-weight:600;color:var(--gray);display:block;margin-bottom:4px">Nombre *</label><input id="f-name" type="text" placeholder="Tu nombre" style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:10px 12px;color:var(--white);font-family:'Space Grotesk',sans-serif;font-size:0.86rem;outline:none"></div>
-      <div><label style="font-size:0.74rem;font-weight:600;color:var(--gray);display:block;margin-bottom:4px">WhatsApp *</label><input id="f-tel" type="tel" placeholder="221 000 0000" style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:10px 12px;color:var(--white);font-family:'Space Grotesk',sans-serif;font-size:0.86rem;outline:none"></div>
+      <div><label style="font-size:0.74rem;font-weight:600;color:var(--gray);display:block;margin-bottom:4px">Nombre *</label><input id="f-name" type="text" placeholder="Tu nombre" style="width:100%;background:#F4F5F6;border:1px solid rgba(15,40,64,0.15);border-radius:6px;padding:10px 12px;color:var(--navy);font-family:'Rubik',sans-serif;font-size:0.86rem;outline:none"></div>
+      <div><label style="font-size:0.74rem;font-weight:600;color:var(--gray);display:block;margin-bottom:4px">WhatsApp *</label><input id="f-tel" type="tel" placeholder="221 000 0000" style="width:100%;background:#F4F5F6;border:1px solid rgba(15,40,64,0.15);border-radius:6px;padding:10px 12px;color:var(--navy);font-family:'Rubik',sans-serif;font-size:0.86rem;outline:none"></div>
     </div>
-    <div style="margin-bottom:12px"><label style="font-size:0.74rem;font-weight:600;color:var(--gray);display:block;margin-bottom:4px">Tipo de proyecto</label><select id="f-tipo" style="width:100%;background:#0d1420;border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:10px 12px;color:var(--white);font-family:'Space Grotesk',sans-serif;font-size:0.86rem;outline:none"><option value="">Selecciona...</option><option>Figura coleccionable</option><option>Prototipo industrial</option><option>Pieza funcional</option><option>Modelado CAD desde cero</option><option>Arquitectura / maqueta</option><option>Otro</option></select></div>
-    <div style="margin-bottom:20px"><label style="font-size:0.74rem;font-weight:600;color:var(--gray);display:block;margin-bottom:4px">Describe tu idea *</label><textarea id="f-desc" placeholder="¿Qué quieres hacer? ¿Tienes archivo o es desde cero? ¿Para cuándo?" style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:10px 12px;color:var(--white);font-family:'Space Grotesk',sans-serif;font-size:0.86rem;outline:none;resize:vertical;min-height:100px"></textarea></div>
-    <button onclick="submitQuote()" style="width:100%;padding:14px;background:var(--orange);color:#fff;border:none;border-radius:8px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:0.9rem;cursor:pointer">Enviar por WhatsApp →</button>
+    <div style="margin-bottom:12px"><label style="font-size:0.74rem;font-weight:600;color:var(--gray);display:block;margin-bottom:4px">Tipo de proyecto</label><select id="f-tipo" style="width:100%;background:#F4F5F6;border:1px solid rgba(15,40,64,0.15);border-radius:6px;padding:10px 12px;color:var(--navy);font-family:'Rubik',sans-serif;font-size:0.86rem;outline:none"><option value="">Selecciona...</option><option>Figura coleccionable</option><option>Prototipo industrial</option><option>Pieza funcional</option><option>Modelado CAD desde cero</option><option>Arquitectura / maqueta</option><option>Otro</option></select></div>
+    <div style="margin-bottom:20px"><label style="font-size:0.74rem;font-weight:600;color:var(--gray);display:block;margin-bottom:4px">Describe tu idea *</label><textarea id="f-desc" placeholder="¿Qué quieres hacer? ¿Tienes archivo o es desde cero? ¿Para cuándo?" style="width:100%;background:#F4F5F6;border:1px solid rgba(15,40,64,0.15);border-radius:6px;padding:10px 12px;color:var(--navy);font-family:'Rubik',sans-serif;font-size:0.86rem;outline:none;resize:vertical;min-height:100px"></textarea></div>
+    <button onclick="submitQuote()" style="width:100%;padding:14px;background:var(--orange);color:var(--navy);border:none;border-radius:999px;font-family:'Rubik',sans-serif;font-weight:500;font-size:0.9rem;cursor:pointer">Enviar por WhatsApp →</button>
   </div>
 </div>
 
@@ -599,185 +589,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
 <script>
-// ============================================================
-//  AURORA — WebGL background (ported from React Bits Aurora)
-//  Props: colorStops, amplitude, blend, speed
-// ============================================================
-(function initAurora() {
-  const VERT_SRC = `
-    attribute vec2 position;
-    void main() {
-      gl_Position = vec4(position, 0.0, 1.0);
-    }
-  `;
-
-  const FRAG_SRC = `
-    precision highp float;
-
-    uniform float uTime;
-    uniform float uAmplitude;
-    uniform vec3 uColorStops[3];
-    uniform vec2 uResolution;
-    uniform float uBlend;
-
-    vec3 permute(vec3 x) {
-      return mod(((x * 34.0) + 1.0) * x, 289.0);
-    }
-
-    float snoise(vec2 v) {
-      const vec4 C = vec4(
-        0.211324865405187, 0.366025403784439,
-        -0.577350269189626, 0.024390243902439
-      );
-      vec2 i  = floor(v + dot(v, C.yy));
-      vec2 x0 = v - i + dot(i, C.xx);
-      vec2 i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
-      vec4 x12 = x0.xyxy + C.xxzz;
-      x12.xy -= i1;
-      i = mod(i, 289.0);
-      vec3 p = permute(
-        permute(i.y + vec3(0.0, i1.y, 1.0))
-        + i.x + vec3(0.0, i1.x, 1.0)
-      );
-      vec3 m = max(
-        0.5 - vec3(
-          dot(x0, x0),
-          dot(x12.xy, x12.xy),
-          dot(x12.zw, x12.zw)
-        ),
-        0.0
-      );
-      m = m * m;
-      m = m * m;
-      vec3 x = 2.0 * fract(p * C.www) - 1.0;
-      vec3 h = abs(x) - 0.5;
-      vec3 ox = floor(x + 0.5);
-      vec3 a0 = x - ox;
-      m *= 1.79284291400159 - 0.85373472095314 * (a0 * a0 + h * h);
-      vec3 g;
-      g.x  = a0.x  * x0.x  + h.x  * x0.y;
-      g.yz = a0.yz * x12.xz + h.yz * x12.yw;
-      return 130.0 * dot(m, g);
-    }
-
-    vec3 colorRamp(vec3 c0, vec3 c1, vec3 c2, float t) {
-      if (t < 0.5) {
-        return mix(c0, c1, t * 2.0);
-      } else {
-        return mix(c1, c2, (t - 0.5) * 2.0);
-      }
-    }
-
-    void main() {
-      vec2 uv = gl_FragCoord.xy / uResolution;
-
-      vec3 rampColor = colorRamp(uColorStops[0], uColorStops[1], uColorStops[2], uv.x);
-
-      float height = snoise(vec2(uv.x * 2.0 + uTime * 0.1, uTime * 0.25)) * 0.5 * uAmplitude;
-      height = exp(height);
-      height = (uv.y * 2.0 - height + 0.2);
-      float intensity = 0.6 * height;
-
-      float midPoint = 0.20;
-      float auroraAlpha = smoothstep(midPoint - uBlend * 0.5, midPoint + uBlend * 0.5, intensity);
-
-      vec3 auroraColor = intensity * rampColor;
-
-      gl_FragColor = vec4(auroraColor * auroraAlpha, auroraAlpha);
-    }
-  `;
-
-  function hexToRgb(hex) {
-    const r = parseInt(hex.slice(1, 3), 16) / 255;
-    const g = parseInt(hex.slice(3, 5), 16) / 255;
-    const b = parseInt(hex.slice(5, 7), 16) / 255;
-    return [r, g, b];
-  }
-
-  function compileShader(gl, type, src) {
-    const shader = gl.createShader(type);
-    gl.shaderSource(shader, src);
-    gl.compileShader(shader);
-    return shader;
-  }
-
-  const canvas = document.getElementById('aurora-canvas');
-  const gl = canvas.getContext('webgl', { alpha: true, premultipliedAlpha: true, antialias: true });
-  if (!gl) return;
-
-  gl.clearColor(0, 0, 0, 0);
-  gl.enable(gl.BLEND);
-  gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
-
-  const vert = compileShader(gl, gl.VERTEX_SHADER, VERT_SRC);
-  const frag = compileShader(gl, gl.FRAGMENT_SHADER, FRAG_SRC);
-  const prog = gl.createProgram();
-  gl.attachShader(prog, vert);
-  gl.attachShader(prog, frag);
-  gl.linkProgram(prog);
-  gl.useProgram(prog);
-
-  // Full-screen triangle (covers clip space with 3 vertices)
-  const verts = new Float32Array([-1, -1,  3, -1,  -1, 3]);
-  const buf = gl.createBuffer();
-  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
-  gl.bufferData(gl.ARRAY_BUFFER, verts, gl.STATIC_DRAW);
-  const posLoc = gl.getAttribLocation(prog, 'position');
-  gl.enableVertexAttribArray(posLoc);
-  gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0);
-
-  const uTime       = gl.getUniformLocation(prog, 'uTime');
-  const uAmplitude  = gl.getUniformLocation(prog, 'uAmplitude');
-  const uColorStops = gl.getUniformLocation(prog, 'uColorStops');
-  const uResolution = gl.getUniformLocation(prog, 'uResolution');
-  const uBlend      = gl.getUniformLocation(prog, 'uBlend');
-
-  // Aurora props — matching the usage example palette, tuned for dark hero
-  const colorStops = ['#d94a16', '#B497CF', '#5227FF'];
-  const amplitude  = 1.0;
-  const blend      = 0.5;
-  const speed      = 0.5;
-
-  const colorData = colorStops.flatMap(hexToRgb);
-
-  function resize() {
-    canvas.width  = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
-    gl.viewport(0, 0, canvas.width, canvas.height);
-    gl.useProgram(prog);
-    gl.uniform2f(uResolution, canvas.width, canvas.height);
-  }
-  window.addEventListener('resize', resize);
-  resize();
-
-  gl.uniform3fv(uColorStops, colorData);
-  gl.uniform1f(uAmplitude, amplitude);
-  gl.uniform1f(uBlend, blend);
-
-  let rafId;
-  function render(t) {
-    rafId = requestAnimationFrame(render);
-    gl.useProgram(prog);
-    gl.uniform1f(uTime, t * 0.001 * speed * 0.1);
-    gl.clear(gl.COLOR_BUFFER_BIT);
-    gl.drawArrays(gl.TRIANGLES, 0, 3);
-  }
-  rafId = requestAnimationFrame(render);
-
-  // Pause when hero is not visible to save GPU
-  const heroObs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        if (!rafId) rafId = requestAnimationFrame(render);
-      } else {
-        cancelAnimationFrame(rafId);
-        rafId = null;
-      }
-    });
-  });
-  heroObs.observe(document.getElementById('hero-sticky'));
-})();
-
 // ============================================================
 //  SUBTLE GRID CANVAS — light dots on dark
 // ============================================================
@@ -788,10 +599,10 @@
     c.width = c.offsetWidth; c.height = c.offsetHeight;
     const W=c.width, H=c.height, step=64;
     ctx.clearRect(0,0,W,H);
-    ctx.strokeStyle='rgba(255,255,255,0.04)'; ctx.lineWidth=0.4;
+    ctx.strokeStyle='rgba(15,40,64,0.05)'; ctx.lineWidth=0.4;
     for(let x=step;x<W;x+=step){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}
     for(let y=step;y<H;y+=step){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
-    ctx.fillStyle='rgba(255,255,255,0.08)';
+    ctx.fillStyle='rgba(15,40,64,0.12)';
     for(let x=step;x<W;x+=step)for(let y=step;y<H;y+=step){
       ctx.beginPath();ctx.arc(x,y,1.2,0,Math.PI*2);ctx.fill();
     }

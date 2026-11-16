@@ -24,14 +24,16 @@
 <meta property="og:description" content="Diseño CAD, filamento, resina, prototipado rápido y manufactura a pedido. Tu idea, hecha objeto.">
 <meta property="og:url" content="https://www.tecnoprint.store/">
 <meta property="og:locale" content="es_MX">
-<meta property="og:image" content="https://drive.google.com/thumbnail?id=1WFk7uTqOtUSmubsZQKCDUZBycwPzGQkv&sz=w1200">
-<meta property="og:image:alt" content="Pieza impresa en 3D por TecnoPrint">
+<meta property="og:image" content="https://www.tecnoprint.store/img/og-tecnoprint.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo de TecnoPrint — Impresión y modelado 3D en Puebla">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="TecnoPrint — Impresión y modelado 3D en Puebla">
 <meta name="twitter:description" content="Diseño CAD, filamento, resina, prototipado rápido y manufactura a pedido. Tu idea, hecha objeto.">
-<meta name="twitter:image" content="https://drive.google.com/thumbnail?id=1WFk7uTqOtUSmubsZQKCDUZBycwPzGQkv&sz=w1200">
+<meta name="twitter:image" content="https://www.tecnoprint.store/img/og-tecnoprint.jpg">
 
 <!-- Favicon -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%230F2840'/%3E%3Ctext%20x='16'%20y='23'%20font-family='Arial,sans-serif'%20font-size='20'%20font-weight='bold'%20fill='%23F07C1E'%20text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
@@ -42,7 +44,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "TecnoPrint",
-  "image": "https://drive.google.com/thumbnail?id=1WFk7uTqOtUSmubsZQKCDUZBycwPzGQkv&sz=w1200",
+  "image": "https://www.tecnoprint.store/img/og-tecnoprint.jpg",
   "description": "Impresión y modelado 3D en Puebla: diseño CAD, impresión en filamento y resina, prototipado rápido y manufactura a pedido.",
   "url": "https://www.tecnoprint.store/",
   "telephone": "+522215714962",
@@ -70,7 +72,7 @@
   script-src 'unsafe-inline' https://cdnjs.cloudflare.com;
   style-src 'unsafe-inline' https://fonts.googleapis.com;
   font-src https://fonts.gstatic.com;
-  img-src https://drive.google.com https://lh3.googleusercontent.com https://drive.usercontent.google.com https://*.googleusercontent.com data: blob:;
+  img-src 'self' data: blob:;
   connect-src 'none';
   frame-src 'none';
   frame-ancestors 'none';
@@ -164,12 +166,8 @@
     line-height: 0.88;
     color: var(--navy);
   }
-  #hero-sub {
-    opacity: 0; transform: translateY(14px);
-    transition: opacity 0.9s ease, transform 0.9s ease;
-    pointer-events: none;
-  }
-  #hero-sub.visible { opacity:1; transform:none; pointer-events:auto; }
+  #hero-sub { opacity: 0; pointer-events: auto; animation: hero-in 0.8s ease 0.5s forwards; }
+  @keyframes hero-in { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:none; } }
   .hero-tagline { font-family:'Anton',sans-serif; font-size:clamp(1rem,2.2vw,1.5rem); letter-spacing:0.12em; color:var(--navy); margin-top:8px; margin-bottom:26px; }
   .hero-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
   .btn-primary { background:var(--orange); color:var(--navy); border:none; padding:14px 34px; border-radius:999px; font-family:'Rubik',sans-serif; font-weight:500; font-size:1rem; cursor:pointer; transition:all 0.2s; }
@@ -177,15 +175,7 @@
   .btn-outline { background:transparent; color:var(--navy); border:1.5px solid var(--navy); padding:14px 34px; border-radius:999px; font-family:'Rubik',sans-serif; font-weight:500; font-size:1rem; cursor:pointer; transition:all 0.2s; }
   .btn-outline:hover { background:var(--navy); color:#fff; }
 
-  /* Scroll hint */
-  .scroll-hint { position:absolute; bottom:26px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:8px; z-index:20; transition:opacity 0.4s; }
-  .scroll-hint span { font-size:0.62rem; letter-spacing:0.18em; text-transform:uppercase; font-family:'JetBrains Mono',monospace; color:var(--gray); }
-  .scroll-arrow { width:15px; height:15px; border-right:1.5px solid var(--gray); border-bottom:1.5px solid var(--gray); transform:rotate(45deg); animation:bounce 1.8s ease-in-out infinite; }
-  @keyframes bounce { 0%,100%{transform:rotate(45deg) translate(0,0)} 50%{transform:rotate(45deg) translate(4px,4px)} }
 
-  /* Progress bar */
-  #asm-bar { position:absolute; bottom:0; left:0; right:0; height:3px; background:rgba(15,40,64,0.08); z-index:20; }
-  #asm-fill { height:100%; width:0%; background:linear-gradient(90deg,var(--orange),var(--navy)); transition: none; }
 
   /* ======== REST OF PAGE (dark) ======== */
   .trust-bar { background:var(--navy); padding:24px 48px; display:flex; justify-content:center; gap:64px; flex-wrap:wrap; }
@@ -340,7 +330,7 @@
   </button>
 </nav>
 
-<!-- HERO — GSAP pinned assembly animation -->
+<!-- HERO — logo con engrane animado al hacer scroll -->
 <div id="hero-wrapper">
   <div id="hero-sticky">
 
@@ -414,11 +404,6 @@
       </div>
     </div>
 
-    <div class="scroll-hint" id="scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-arrow"></div>
-    </div>
-    <div id="asm-bar"><div id="asm-fill"></div></div>
 
   </div>
 </div>
@@ -489,32 +474,36 @@
     </div>
     <div class="portfolio-grid">
       <div class="portfolio-card reveal">
-        <img src="https://drive.google.com/thumbnail?id=1Zt_Cyu0GP3pljI-VFsHJ_KyilMj4bIpP&sz=w600" alt="Llavero NFC" loading="lazy" referrerpolicy="no-referrer">
-        <div class="portfolio-overlay"><h4>Llavero NFC</h4><span>Filamento · FDM</span></div>
+        <img src="img/t-rex.webp" alt="T-Rex articulado impreso en 3D por TecnoPrint" loading="lazy" decoding="async">
+        <div class="portfolio-overlay"><h4>T-Rex articulado</h4><span>Esqueleto articulado · Acabado hueso</span></div>
       </div>
       <div class="portfolio-card reveal">
-        <img src="https://drive.google.com/thumbnail?id=1WFk7uTqOtUSmubsZQKCDUZBycwPzGQkv&sz=w600" alt="Exoesqueleto Dinosaurio" loading="lazy" referrerpolicy="no-referrer">
-        <div class="portfolio-overlay"><h4>Exoesqueleto Dinosaurio</h4><span>Figura · Filamento</span></div>
+        <img src="img/dragon.webp" alt="Dragón articulado impreso en 3D por TecnoPrint" loading="lazy" decoding="async">
+        <div class="portfolio-overlay"><h4>Dragón articulado</h4><span>Filamento tornasol</span></div>
       </div>
       <div class="portfolio-card reveal">
-        <img src="https://drive.google.com/thumbnail?id=1vmozXzH-hcbd7XZQ7nUPiT5viMxaUL9K&sz=w600" alt="Display Verstappen" loading="lazy" referrerpolicy="no-referrer">
-        <div class="portfolio-overlay"><h4>Display Verstappen</h4><span>Resina · Coleccionable</span></div>
+        <img src="img/tiburon.webp" alt="Tiburón articulado impreso en 3D por TecnoPrint" loading="lazy" decoding="async">
+        <div class="portfolio-overlay"><h4>Tiburón articulado</h4><span>Filamento tornasol</span></div>
       </div>
       <div class="portfolio-card reveal">
-        <img src="https://drive.google.com/thumbnail?id=1fcmC9CYfA4rhAAJshzcqzHDf8i2o_eJr&sz=w600" alt="Monaco GP Circuit Art" loading="lazy" referrerpolicy="no-referrer">
-        <div class="portfolio-overlay"><h4>Monaco GP — Circuit Art</h4><span>Marco decorativo · PLA</span></div>
+        <img src="img/dilofosaurio.webp" alt="Dilofosaurio articulado impreso en 3D por TecnoPrint" loading="lazy" decoding="async">
+        <div class="portfolio-overlay"><h4>Dilofosaurio articulado</h4><span>Filamento dorado y rosa</span></div>
       </div>
       <div class="portfolio-card reveal">
-        <img src="https://drive.google.com/thumbnail?id=1DdSDIF8CceOrOPdNpx-nW7ln0HWp7-fP&sz=w600" alt="Lampara paramétrica" loading="lazy" referrerpolicy="no-referrer">
-        <div class="portfolio-overlay"><h4>Lámpara paramétrica</h4><span>Diseño de ondas · PLA</span></div>
+        <img src="img/lampara.webp" alt="Lámpara Ondulada impreso en 3D por TecnoPrint" loading="lazy" decoding="async">
+        <div class="portfolio-overlay"><h4>Lámpara Ondulada</h4><span>Diseño paramétrico · PLA</span></div>
       </div>
       <div class="portfolio-card reveal">
-        <img src="https://drive.google.com/thumbnail?id=11s018v5cmksh7XTyeEGT_NrZULxfETWY&sz=w600" alt="Funko R7" loading="lazy" referrerpolicy="no-referrer">
-        <div class="portfolio-overlay"><h4>Funko R7</h4><span>Figura coleccionable · Resina</span></div>
+        <img src="img/menu-nfc.webp" alt="Menú digital NFC + QR impreso en 3D por TecnoPrint" loading="lazy" decoding="async">
+        <div class="portfolio-overlay"><h4>Menú digital NFC + QR</h4><span>Personalizado para negocios</span></div>
       </div>
       <div class="portfolio-card reveal">
-        <img src="https://drive.google.com/thumbnail?id=10j9XNdG3LURtXesH4qC6pRaypTF3u2m2&sz=w600" alt="Yoshi" loading="lazy" referrerpolicy="no-referrer">
-        <div class="portfolio-overlay"><h4>Yoshi</h4><span>Figura · Filamento multicolor</span></div>
+        <img src="img/mascara.webp" alt="Máscara personalizable impreso en 3D por TecnoPrint" loading="lazy" decoding="async">
+        <div class="portfolio-overlay"><h4>Máscara personalizable</h4><span>Pieza a la medida</span></div>
+      </div>
+      <div class="portfolio-card reveal">
+        <img src="img/banner-qr.webp" alt="Banner luminoso personalizado con logo y código QR, por TecnoPrint" loading="lazy" decoding="async">
+        <div class="portfolio-overlay"><h4>Banner luminoso con logo y QR</h4><span>Personalizado con tu marca</span></div>
       </div>
     </div>
   </div>
@@ -611,43 +600,22 @@
 })();
 
 // ============================================================
-//  HELMET ASSEMBLY — GSAP ScrollTrigger
+//  LOGO — el engrane gira mientras el hero sale de pantalla
 // ============================================================
 (function(){
+  if (!window.gsap || !window.ScrollTrigger) return;
   gsap.registerPlugin(ScrollTrigger);
 
-  const heroSub    = document.getElementById('hero-sub');
-  const scrollHint = document.getElementById('scroll-hint');
-  const asmFill    = document.getElementById('asm-fill');
-  const isMobile   = window.innerWidth <= 768;
-
-  const tl = gsap.timeline({
+  gsap.timeline({
     scrollTrigger: {
-      trigger:       '#hero-sticky',
-      start:         'top top',
-      end:           isMobile ? '+=900' : '+=1800',
-      scrub:         true,
-      pin:           true,
-      anticipatePin: 1,
-      onUpdate: function(self) {
-        const p = self.progress;
-        asmFill.style.width = (p * 100) + '%';
-        if (!isMobile) {
-          scrollHint.style.opacity = Math.max(0, 1 - p * 6);
-          if (p >= 0.92) heroSub.classList.add('visible');
-          else           heroSub.classList.remove('visible');
-        }
-      }
+      trigger: '#hero-sticky',
+      start:   'top top',
+      end:     'bottom top',
+      scrub:   0.4
     }
-  });
-
-  // En móvil los botones siempre visibles (manejado por CSS), ocultar scroll hint
-  if (isMobile) { scrollHint.style.display = 'none'; }
-
-  // El engrane da 2 vueltas mientras se hace scroll y el logo crece ligeramente
-  tl.to('#tp-gear-scroll', { rotation: 720, svgOrigin: '158.5 165', ease: 'none', duration: 1 }, 0)
-    .to('#tp-logo',        { scale: 1.08, transformOrigin: '50% 50%', ease: 'none', duration: 1 }, 0);
-
+  })
+  .to('#tp-gear-scroll', { rotation: 360, svgOrigin: '158.5 165', ease: 'none', duration: 1 }, 0)
+  .to('#tp-logo',        { scale: 1.06, transformOrigin: '50% 50%', ease: 'none', duration: 1 }, 0);
 })();
 
 // ============================================================
